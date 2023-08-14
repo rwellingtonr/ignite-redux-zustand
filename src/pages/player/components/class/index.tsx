@@ -1,8 +1,8 @@
-import { ClassHeading } from './classHeading'
-import { ClassLesson } from './classLesson'
-import { ClassRoot } from './classRoot'
-import { ClassSection } from './classSection'
-import { Classes } from './classes'
+import { ClassHeading } from './ClassHeading'
+import { ClassLesson } from './ClassLesson'
+import { ClassRoot } from './ClassRoot'
+import { ClassSection } from './ClassSection'
+import { Classes } from './Classes'
 
 export const Class = {
 	Root: ClassRoot,

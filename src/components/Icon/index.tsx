@@ -7,6 +7,8 @@ interface IconProps extends LucideProps {
 }
 
 export function Icon({ name, ...props }: IconProps) {
-	const LucideIcon = dynamic(dynamicIconImports[name])
+	const LucideIcon = dynamic(dynamicIconImports[name], {
+		loading: () => <div className="h-4 w-4 animate-pulse rounded-full bg-zinc-800" />,
+	})
 	return <LucideIcon {...props} />
 }

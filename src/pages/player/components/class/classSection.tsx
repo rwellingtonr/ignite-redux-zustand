@@ -1,7 +1,9 @@
-import { ComponentProps } from 'react'
+'use client'
 
-type ClassSectionProps = ComponentProps<'section'>
+import * as Collapsible from '@radix-ui/react-collapsible'
+
+type ClassSectionProps = Collapsible.CollapsibleProps
 
 export function ClassSection(props: ClassSectionProps) {
-	return <section {...props} />
+	return <Collapsible.Root {...props} className="group" />
 }
